@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__wireguard_client_manager.o
+[PROJECT FILES]
+/home/tania/Workspaces/wireguard_client_manager/wireguard_client_manager.gpr
+20251116202401 fbe6648ad23fe8ae0eaaa25caa84724b
+/home/tania/Workspaces/wireguard_client_manager/config/wireguard_client_manager_config.gpr
+20251116192914 177061547df51a832192667acdd419c6
+[BOUND OBJECT FILES]
+/home/tania/Workspaces/wireguard_client_manager/obj/development/wireguard_client_manager.o
+[GENERATED SOURCE FILES]
+b__wireguard_client_manager.ads
+b__wireguard_client_manager.adb
+b__wireguard_client_manager.ali
+[RESULTING OPTIONS]
+-L/home/tania/Workspaces/wireguard_client_manager/obj/development/
+-L/home/tania/Workspaces/wireguard_client_manager/obj/development/
+-L/home/tania/.local/share/alire/toolchains/gnat_native_15.2.1_4640d4b3/lib/gcc/x86_64-pc-linux-gnu/15.2.0/adalib/
+-static
+/home/tania/.local/share/alire/toolchains/gnat_native_15.2.1_4640d4b3/lib/gcc/x86_64-pc-linux-gnu/15.2.0/adalib/libgnat.a
+-ldl

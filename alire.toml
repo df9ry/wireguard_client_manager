@@ -1,0 +1,16 @@
+name = "wireguard_client_manager"
+description = "Managing WireGuard Clients"
+version = "0.1.0-dev"
+
+authors = ["Reiner Hagn"]
+maintainers = ["Reiner Hagn <email@h256.de>"]
+maintainers-logins = ["df9ry"]
+licenses = "GPL-3.0-or-later"
+website = ""
+tags = ["wireguard", "client", "manager", "administration", "vpn", "linux"]
+
+[[depends-on]]
+gtkada = "^25.0.1"
+
+[[depends-on]]
+vss = "^25.0.0"

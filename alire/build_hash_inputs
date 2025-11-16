@@ -1,0 +1,4 @@
+external:LIBRARY_TYPE=default
+external:WIREGUARD_CLIENT_MANAGER_LIBRARY_TYPE=default
+profile:wireguard_client_manager=DEVELOPMENT
+switches:wireguard_client_manager=-Og,-fdata-sections,-ffunction-sections,-g,-gnatVa,-gnatW8,-gnatw.X,-gnatwa,-gnaty-d,-gnaty3,-gnatyA,-gnatyB,-gnatyI,-gnatyO,-gnatyS,-gnatya,-gnatyb,-gnatyc,-gnatye,-gnatyf,-gnatyh,-gnatyi,-gnatyk,-gnatyl,-gnatym,-gnatyn,-gnatyp,-gnatyr,-gnatyt,-gnatyu,-gnatyx

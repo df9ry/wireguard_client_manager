@@ -1,0 +1,230 @@
+# THIS FILE IS GENERATED. DO NOT EDIT.
+
+[solution]
+[solution.context]
+solved = true
+[[solution.state]]
+crate = "gnat"
+fulfilment = "solved"
+pinned = false
+transitivity = "indirect"
+versions = ">=11 & <2000"
+[solution.state.release]
+auto-gpr-with = false
+description = "The GNAT Ada compiler - Native"
+licenses = "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1"
+maintainers = [
+"Fabien Chouteau <chouteau@adacore.com>",
+"CÃ©sar Sagaert <sagaert@adacore.com>",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+"AldanTanneo",
+]
+name = "gnat_native"
+provides = [
+"gnat=15.2.1",
+]
+version = "15.2.1"
+website = "https://github.com/alire-project/GNAT-FSF-builds"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.environment]
+[solution.state.release.environment.LD_LIBRARY_PATH]
+prepend = "${CRATE_ROOT}/lib64"
+[solution.state.release.environment.LD_RUN_PATH]
+prepend = "${CRATE_ROOT}/lib64"
+[solution.state.release.environment.LIBRARY_PATH]
+prepend = "${CRATE_ROOT}/lib64"
+[solution.state.release.environment.PATH]
+prepend = "${CRATE_ROOT}/bin"
+[solution.state.release.origin]
+binary = true
+hashes = [
+"sha256:4640d4b369833947ab1a156753f4db0ecd44b0f14410b5b2bc2a14df496604bb",
+]
+url = "https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.2.0-1/gnat-x86_64-linux-15.2.0-1.tar.gz"
+[[solution.state]]
+crate = "gtkada"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^25.0.1"
+[solution.state.release]
+authors = [
+"AdaCore",
+]
+description = "An Ada graphical toolkit based on Gtk+"
+licenses = "GPL-3.0-or-later WITH GCC-exception-3.1"
+long-description = "This crate requires Gtk3+ >= 3.24.24"
+maintainers = [
+"chouteau@adacore.com",
+"reznikmm@gmail.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+"reznikmm",
+]
+name = "gtkada"
+project-files = [
+"src/gtkada.gpr",
+]
+tags = [
+"gtk",
+"gui",
+]
+version = "25.0.1"
+website = "https://github.com/adacore/gtkada"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.gpr-externals]
+LIBRARY_TYPE = [
+"static",
+"static-pic",
+"relocatable",
+]
+[solution.state.release.origin]
+hashes = [
+"sha512:d3787772c13455df72c837c0ec881c6f6e38322a7f636965bd2442e94daca93a13aa53e7f2f9e74ee4412f7df59dbffcf867f4292e7cf3f3a4b31966e67668ff",
+]
+url = "https://github.com/adacore/gtkada/archive/v25.0.1/gtkada-25.0.1.zip"
+[[solution.state.release.actions]]
+command = [
+"bash",
+"-c",
+"PATH=${DISTRIB_ROOT}/mingw64/bin:${PATH} ./configure",
+]
+directory = "."
+type = "post-fetch"
+[[solution.state.release.actions]]
+command = [
+"make",
+"src/gtkada-intl.adb",
+]
+directory = "."
+type = "post-fetch"
+[[solution.state.release.depends-on]]
+libgtk3 = ">=3.24.24"
+make = "*"
+pkg_config = "*"
+[[solution.state]]
+crate = "libgtk3"
+fulfilment = "solved"
+pinned = false
+transitivity = "indirect"
+versions = ">=3.24.24"
+[solution.state.release]
+description = "GObject-based multi-platform GUI toolkit (v3)"
+licenses = "LGPL-3.0-only"
+maintainers = [
+"chouteau@adacore.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+]
+name = "libgtk3"
+notes = "Provided by system package: libgtk-3-dev"
+version = "3.24.38"
+[solution.state.release.origin]
+url = "system:libgtk-3-dev"
+[[solution.state]]
+crate = "make"
+fulfilment = "solved"
+pinned = false
+transitivity = "indirect"
+versions = "*"
+[solution.state.release]
+description = "Utility for directing compilation"
+maintainers = [
+"alejandro@mosteo.com",
+]
+maintainers-logins = [
+"mosteo",
+]
+name = "make"
+notes = "Provided by system package: make"
+version = "4.3.0"
+[solution.state.release.origin]
+url = "system:make"
+[[solution.state]]
+crate = "pkg_config"
+fulfilment = "solved"
+pinned = false
+transitivity = "indirect"
+versions = "*"
+[solution.state.release]
+description = ""
+licenses = "LGPL-3.0-only"
+maintainers = [
+"chouteau@adacore.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+]
+name = "pkg_config"
+notes = "Provided by system package: pkg-config"
+version = "1.8.1"
+[solution.state.release.origin]
+url = "system:pkg-config"
+[[solution.state]]
+crate = "vss"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^25.0.0"
+[solution.state.release]
+authors = [
+"AdaCore",
+]
+description = "Advanced string and text manipulation with Unicode support"
+licenses = "Apache-2.0 WITH LLVM-exception"
+maintainers = [
+"Vadim Godunko <vgodunko@gmail.com>",
+"Maxim Reznik <reznikmm@gmail.com>",
+]
+maintainers-logins = [
+"godunko",
+"reznikmm",
+]
+name = "vss"
+project-files = [
+"gnat/vss_text.gpr",
+"gnat/vss_json.gpr",
+"gnat/vss_regexp.gpr",
+"gnat/vss_xml.gpr",
+"gnat/vss_xml_templates.gpr",
+]
+tags = [
+"unicode",
+"json",
+"text",
+"xml",
+"template",
+]
+version = "25.0.0"
+website = "https://github.com/AdaCore/VSS"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.origin]
+hashes = [
+"sha512:1ddbb26c99e951f71b03933614a263966e785c098d7abb557ea24a35f516bd9fe5f66367b44e8355e29f4f22f9493dfd6eb9029540cbcfe94f2e4cace96dabc0",
+]
+url = "https://github.com/adacore/VSS/archive/v25.0.0/VSS-25.0.0.zip"
+[[solution.state.release.depends-on]]
+gnat = ">=11 & <2000"
+
